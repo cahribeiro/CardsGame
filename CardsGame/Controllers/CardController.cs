@@ -37,7 +37,7 @@ namespace CardsGameAPI.Controllers
                 Room room = await GetRoombyId(Id);
                 if(room == null)
                 {
-                    return BadRequest("Id not found");
+                    return NotFound("Id not found");
                 }
 
                 Cards actualCard = room.DeckCards[room.CardsPlayed - 1];
@@ -72,7 +72,7 @@ namespace CardsGameAPI.Controllers
 
                 if (room == null)
                 {
-                    return BadRequest("Id not found");
+                    return NotFound("Id not found");
                 }
 
                 int cardsPlayed = room.CardsPlayed;
