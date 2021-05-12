@@ -34,7 +34,7 @@ namespace CardsGame.Tests
             // Act
             var notFoundResult = await controller.Get(guid);
             // Assert
-            Assert.IsType<BadRequestObjectResult>(notFoundResult);
+            Assert.IsType<NotFoundObjectResult>(notFoundResult);
         }
 
         [Fact]
@@ -68,7 +68,7 @@ namespace CardsGame.Tests
             // Act
             var badResponse = await controller.PlayCard(cardRequest);
             // Assert
-            Assert.IsType<BadRequestObjectResult>(badResponse);
+            Assert.IsType<NotFoundObjectResult>(badResponse);
         }
 
         [Fact]
