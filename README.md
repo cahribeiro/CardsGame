@@ -8,6 +8,7 @@
   <a href="https://www.linkedin.com/in/ana-carolina-ribeiro-santos/">
     <img alt="Made by" src="https://img.shields.io/badge/made%20by-Carolina%20Ribeiro-blue">
   </a>
+  <img alt="GitHub" src="https://img.shields.io/badge/license-MIT-green">
  
 </p>
 
